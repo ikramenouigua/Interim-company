@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.20"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="mywindow">
+    <property name="title" translatable="yes">hii wordd</property>
+    <property name="default_width">600</property>
+    <property name="default_height">250</property>
+    <signal name="destroy" handler="ondestroy" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkButton" id="connect">
+            <property name="label" translatable="yes">Utilisateur
+</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+          </object>
+          <packing>
+            <property name="x">57</property>
+            <property name="y">344</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="entreprise">
+            <property name="label" translatable="yes">Entreprise
+</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <property name="relief">half</property>
+            <property name="image_position">right</property>
+          </object>
+          <packing>
+            <property name="x">427</property>
+            <property name="y">340</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="width_request">240</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">GESTION D'UNE SOCIETE D'INTER</property>
+          </object>
+          <packing>
+            <property name="x">76</property>
+            <property name="y">48</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="width_request">500</property>
+            <property name="height_request">200</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">rec.jpg</property>
+          </object>
+          <packing>
+            <property name="x">56</property>
+            <property name="y">125</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window1">
+    <child>
+      <placeholder/>
+    </child>
+  </object>
+</interface>
